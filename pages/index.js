@@ -11,8 +11,9 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <AppLayout>
-       <Head>
+
+   <>
+          <Head>   
                 <title>{'Constructo'}</title>
                 <meta name="description" content={"New Jersey Trusted Roofing Contractor. Protecting what matters the most. Whether you're in need of a full roof replacement or a roof repair, you can coun"} />
                 <meta property="og:description" content={"New Jersey Trusted Roofing Contractor. Protecting what matters the most. Whether you're in need of a full roof replacement or a roof repair, you can coun"} />
@@ -27,6 +28,8 @@ export default function Home() {
                 <meta name="twitter:description" content={"New Jersey Trusted Roofing Contractor. Protecting what matters the most. Whether you're in need of a full roof replacement or a roof repair, you can coun"} />
                 {/* <meta name="twitter:image" content={ogimgurl} /> */}
             </Head>
+    <AppLayout>
+      
       <Hero/>
       <Quote/>
       <Featured/>
@@ -34,5 +37,6 @@ export default function Home() {
       <Clients/>
        
     </AppLayout>
+   </>
   )
 }
