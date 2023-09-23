@@ -2,26 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+
+
+
+h1{@apply text-5xl}
+h2{@apply text-4xl}
+h3{@apply text-3xl}
+h4{@apply text-2xl}
+h5{@apply text-xl font-semibold}
+
+
+
+
+.text-light{
+  @apply text-[#727272]
+}
+.text-muted{
+  @apply text-[#d1d1d1]
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.btn{
+
+  @apply px-6 py-2 bg-primary hover:text-secondary hover:bg-white duration-200
+
+}
+.btn-trans{
+
+  @apply px-4 py-2 outline-white outline outline-1 hover:text-secondary hover:bg-white duration-200
+
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.btn-inv{
+  @apply px-6 py-2 bg-secondary hover:bg-primary text-white duration-200
+}
+
+.bg-gra{
+
+  background: linear-gradient(to bottom, #FFc329 50%, transparent 50%)
+}
+
+.tags {
+
+
+  @apply py-3  bg-[#242424] hover:bg-primary text-white duration-200 text-xs w-fit px-2 
+
+}
+
+
+input{
+
+  @apply w-full p-4 outline-2 outline-primary border-2
+}
+
+textarea{
+
+  @apply outline-2 outline-primary border-2
 }
